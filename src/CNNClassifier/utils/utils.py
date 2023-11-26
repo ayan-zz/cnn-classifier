@@ -39,8 +39,8 @@ def get_size():
 @ensure_annotations
 def create_directory(path_to_directory:list,verbose=True):
     for path in path_to_directory:
-        os.makedirs(Path,exist_ok=True)
+        os.makedirs(path,exist_ok=True)
         if verbose:
-            logger.info(f"create directory at: {Path}")
+            logger.info(f"create directory at: {path}")
 
 
